@@ -56,7 +56,9 @@
                <div class="col-sm-9">
                   <ul class="email text_align_right">
                      <li class="d_none"> <i class="fa fa-map-marker" aria-hidden="true"></i>Salem</a></li>
-                     <li class="d_none"><a href="https://api.whatsapp.com/send/?phone=9345841118&text&type=phone_number&app_absent=0" target="_black"><i class="fa fa-phone" aria-hidden="true"></i>+91 9345841118</a></li>
+                     <li class="d_none"><a
+                           href="https://api.whatsapp.com/send/?phone=9345841118&text&type=phone_number&app_absent=0"
+                           target="_black"><i class="fa fa-phone" aria-hidden="true"></i>+91 9345841118</a></li>
                      <li class="d_none"> <a href="#"><i class="fa fa-envelope"
                               aria-hidden="true"></i>info@karthikintdes.in</a></li>
                      <li class="d_none"> <a href="#">Login <i class="fa fa-user" aria-hidden="true"></i></a> </li>
@@ -95,7 +97,8 @@
                         <input class="form-control" id="phone" placeholder="Phone" type="text" name="Phone">
                      </div>
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <textarea class="textarea" id="message" placeholder="Message" type="text" name="Message"></textarea>
+                        <textarea class="textarea" id="message" placeholder="Message" type="text"
+                           name="Message"></textarea>
                      </div>
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <button class="send" type="button" onclick="SendMail()" id="send">Send</button>
@@ -163,11 +166,11 @@
                <div class="col-md-3 col-sm-6">
                   <div class="reader">
                      <h3>Contact Us</h3>
-                     <ul >
+                     <ul>
                         <li class="location"> <i class="fa fa-map-marker" aria-hidden="true"></i>Salem</a></li>
                         <li class="location"><i class="fa fa-phone" aria-hidden="true"></i>+91 9345841118</a></li>
                         <li class="location"> <a href="#" style="color: white;"><i class="fa fa-envelope"
-                           aria-hidden="true"></i>info@karthikintdes.in</a></li>
+                                 aria-hidden="true"></i>info@karthikintdes.in</a></li>
                   </div>
                </div>
             </div>
@@ -213,19 +216,32 @@
       }
    </script>
    <!-- google map js -->
-   <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
    </script>
    <!-- end google map js -->
    <script>
-      function SendMail(){
+      async function SendMail() {
          const name = document.getElementById("name").value
          const email = document.getElementById("email").value
          const phone = document.getElementById("phone").value
          const message = document.getElementById("message").value
 
-         alert(name,email,phone,message)
-      
+         if (name && email && phone && message) {
+            let res = await fetch("https://mailer-interior.netlify.app/send-email", {
+               method: "POST",
+               body: {
+                  "name": name,
+                  "email": email,
+                  "number": phone,
+                  "message": message
+               }
+            }).then(res=>res.json())
+            alert(res)
+            
+         } else {
+            alert("please enter the below fields")
+         }
+
       }
    </script>
 </body>
