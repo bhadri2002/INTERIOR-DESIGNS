@@ -85,23 +85,26 @@
       <div class="container-fluid">
          <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-               <form class="main_form">
+               <form class="main_form" target="_blank" action="https://formsubmit.co/Karthik-interior-decorators@outlook.com" method="POST">
                   <div class="row">
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <input class="form-control" id="name" placeholder="Name" type="text" name="Name">
+                        <input class="form-control" id="name" placeholder="Name" type="text" name="name" required>
                      </div>
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <input class="form-control" id="email" placeholder="Email" type="text" name="Email">
+                        <input class="form-control" id="email" placeholder="Email" type="text" name="email" required>
                      </div>
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <input class="form-control" id="phone" placeholder="Phone" type="text" name="Phone">
+                        <input class="form-control" id="phone" placeholder="Phone" type="text" name="phone" required>
                      </div>
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <textarea class="textarea" id="message" placeholder="Message" type="text"
-                           name="Message"></textarea>
+                           name="message" required></textarea>
                      </div>
+                     <input type="hidden" name="_subject" value="Contact from the web site">
+                     <input type="hidden" name="_captcha" value="false">
+                     <input type="hidden" name="_next" value="https://karthi-interior-design.netlify.app?mail=true">
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <button class="send" type="button" onclick="SendMail()" id="send">Send</button>
+                        <button class="send" type="submit" onclick="SendMail()" id="send">Send</button>
                      </div>
                   </div>
                </form>
@@ -220,6 +223,7 @@
    </script>
    <!-- end google map js -->
    <script>
+      
       async function SendMail() {
          const name = document.getElementById("name").value
          const email = document.getElementById("email").value

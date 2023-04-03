@@ -460,6 +460,18 @@ s0.parentNode.insertBefore(s1,s0);
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/custom.js"></script>
    <script src="js/jquery-3.0.0.min.js"></script>
+   <script>
+      window.onload = ()=>{
+         let mail = window.location.search.slice(1).split("=")
+         if(mail.length > 0)
+         {
+            if(mail[0] == "mail" && mail[1] == "true")
+            {
+               alert("Thank you for submitting the mail")
+            }
+         }
+      }
+   </script>
 </body>
 
 </html>
