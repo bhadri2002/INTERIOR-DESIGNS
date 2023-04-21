@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <!-- site metas -->
+  <title>above</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- responsive-->
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- awesome fontfamily -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  <title>Product Images with Rates</title>
+  <style>
+    /* Style for the product image and rate container */
+    .product {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+      width: 200px;
+    }
+
+    /* Style for the product image */
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Style for the product rate */
+    .product .rate {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="" /></div>
+  </div>
+  <!-- end loader -->
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="head-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="logo">
+              <a href="index.html">
+                <h1 class="text">KARTHIK INTERIOR DESIGNS</h1>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <ul class="email text_align_right">
+              <li class="d_none"> <i class="fa fa-map-marker" aria-hidden="true"></i>Salem</a></li>
+              <li class="d_none"><a
+                  href="https://api.whatsapp.com/send/?phone=9345841118&text&type=phone_number&app_absent=0"
+                  target="_black"><i class="fa fa-phone" aria-hidden="true"></i>+91 9345841118</a></li>
+              <li class="d_none"> <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>info@karthikintdes.in</a>
+              </li>
+              <!-- <li class="d_none"> <a href="#">Login <i class="fa fa-user" aria-hidden="true"></i></a> </li> -->
+              <li class="d_none"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></li>
+              <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section style="background-color: #eee;">
+    <div class="text-center container py-5">
+      <h4 class="mt-4 mb-5"><strong>Mordern screens</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/screen1.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Screen-1</h5>
+              </a>
+              <h6 class="mb-3">Rs.999</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/screen2.jpg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Screen-2</h5>
+              </a>
+              <h6 class="mb-3">Rs.899</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/screen3.jpg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Screen-3</h5>
+              </a>
+              <h6 class="mb-3">Rs.2000</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/screen4.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Screen-4</h5>
+              </a>
+              <h6 class="mb-3">Rs.4500</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/screen5.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Screen-5</h5>
+              </a>
+              <h6 class="mb-3">Rs.3800</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/screen6.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Blinds-6</h5>
+              </a>
+              <h6 class="mb-3">Rs.3000</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/blinds7.jpg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Blinds-7</h5>
+              </a>
+              <h6 class="mb-3">Rs.1700</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/blinds8.jpg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Blinds-8</h5>
+              </a>
+              <h6 class="mb-3">Rs.2000</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/blinds9.jpg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Blinds-9</h5>
+              </a>
+              <h6 class="mb-3">Rs.3400</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/blinds10.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Blinds-10</h5>
+              </a>
+              <h6 class="mb-3">Rs.2500</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #eee;">
+    <div class="text-center container py-5">
+      <h4 class="mt-4 mb-5"><strong>Floaring Mat</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/floaringmat1.jpg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Mat-1</h5>
+              </a>
+              <h6 class="mb-3">sq/ft:Rs.50</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/fm4.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Mat-2</h5>
+              </a>
+              <h6 class="mb-3">Sq/ft:Rs.65</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/fm2.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Mat-3</h5>
+              </a>
+              <h6 class="mb-3">Sq/ft:Rs.20</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/fm3.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Mat-4</h5>
+              </a>
+              <h6 class="mb-3">Sq/ft:Rs.40</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/fm5.jpg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Mat-5</h5>
+              </a>
+              <h6 class="mb-3">Sq/ft:Rs.80</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #eee;">
+    <div class="text-center container py-5">
+      <h4 class="mt-4 mb-5"><strong>Floaring Mat</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/mn1.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Net-1</h5>
+              </a>
+              <h6 class="mb-3">sq/ft:Rs.10</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/mn2.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Net-2</h5>
+              </a>
+              <h6 class="mb-3">Sq/ft:Rs.10</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-8 mb-3">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="product/mn3.jpeg" class="w-100" style="height: 250px;object-fit: fill;" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Net-3</h5>
+              </a>
+              <h6 class="mb-3">Sq/ft:Rs.10</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+  <!-- end footer -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+
+</html>
